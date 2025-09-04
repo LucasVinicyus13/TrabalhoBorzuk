@@ -3,85 +3,105 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Site DS 2°A EM</title>
+  <title>Desenvolvimento de Sistemas - 2°A EM</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Header -->
+  <!-- Cabeçalho -->
   <header>
-    <div class="logo">DS 2°A EM</div>
-    <nav>
+    <nav class="nav container">
+      <div class="brand">
+        <div class="logo"></div>
+        <span>DS 2°A EM</span>
+      </div>
       <ul>
         <li><a href="#curso">Curso</a></li>
-        <li><a href="#ia">IA</a></li>
+        <li><a href="#ia">Inteligência Artificial</a></li>
         <li><a href="#setec">SETEC</a></li>
       </ul>
     </nav>
   </header>
 
   <!-- Seção 1 -->
-  <section id="curso" class="secao secao-1">
-    <h2>Sobre o Curso de Desenvolvimento de Sistemas</h2>
-    <p>
-      O curso de Desenvolvimento de Sistemas do 2° A do Ensino Médio integra teoria e prática, 
-      capacitando os estudantes a programar, modelar e entender como funcionam as tecnologias que movem o mundo digital.
-    </p>
-    <img src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/512/external-programming-computer-science-flaticons-lineal-color-flat-icons.png" alt="Imagem Desenvolvimento de Sistemas">
+  <section id="curso" class="hero container">
+    <div class="grid">
+      <div>
+        <span class="kicker">Curso</span>
+        <h1>Desenvolvimento de Sistemas</h1>
+        <p class="sub">O curso de Desenvolvimento de Sistemas no 2° Ano do Ensino Médio
+          tem como objetivo preparar os alunos para o mundo da tecnologia,
+          ensinando conceitos de programação, banco de dados, redes e
+          desenvolvimento web.</p>
+        <div class="btns">
+          <a href="#ia" class="btn primary">Explorar IA</a>
+          <a href="#setec" class="btn">Projetos</a>
+        </div>
+      </div>
+      <div>
+        <img src="https://picsum.photos/500/300?random=1" alt="Sala de informática">
+      </div>
+    </div>
   </section>
 
   <!-- Seção 2 -->
-  <section id="ia" class="secao secao-2">
+  <section id="ia" class="container">
     <h2>Temas sobre Inteligência Artificial</h2>
-    <p class="lead">Selecionamos alguns tópicos importantes sobre IA que estão moldando o futuro da tecnologia.</p>
+    <p class="lead">Selecionamos alguns tópicos importantes sobre IA que estão moldando
+      o futuro da tecnologia.</p>
 
     <div class="grid four">
-      <!-- Machine Learning -->
       <div class="card">
         <span class="tag">Machine Learning</span>
-        <p>Capacidade de sistemas aprenderem com dados e melhorarem seu desempenho sem programação explícita.</p>
-        <div class="video-container">
-          <iframe src="https://www.youtube.com/embed/ukzFI9rgwfU" title="Machine Learning Explicado" frameborder="0" allowfullscreen></iframe>
-        </div>
+        <p>Capacidade de sistemas aprenderem com dados e melhorarem seu
+          desempenho sem programação explícita.</p>
       </div>
-
-      <!-- Redes Neurais -->
       <div class="card">
         <span class="tag">Redes Neurais</span>
-        <p>Modelos inspirados no cérebro humano, fundamentais para tarefas como reconhecimento de imagem e fala.</p>
-        <div class="video-container">
-          <iframe src="https://www.youtube.com/embed/aircAruvnKk" title="Redes Neurais Explicação" frameborder="0" allowfullscreen></iframe>
-        </div>
+        <p>Modelos inspirados no cérebro humano, fundamentais para tarefas
+          como reconhecimento de imagem e fala.</p>
       </div>
-
-      <!-- Processamento de Linguagem Natural -->
       <div class="card">
         <span class="tag">Processamento de Linguagem Natural</span>
-        <p>Área que possibilita que computadores compreendam e gerem linguagem humana, como em chatbots e tradutores.</p>
-        <div class="video-container">
-          <iframe src="https://www.youtube.com/embed/X1IpNUs1PV8" title="O que é NLP (Processamento de linguagem natural)?" frameborder="0" allowfullscreen></iframe>
-        </div>
+        <p>Área que possibilita que computadores compreendam e gerem
+          linguagem humana, como em chatbots e tradutores.</p>
       </div>
-
-      <!-- Visão Computacional -->
       <div class="card">
         <span class="tag">Visão Computacional</span>
-        <p>Tecnologia que permite que máquinas "enxerguem" e interpretem imagens ou vídeos, usada em carros autônomos e segurança.</p>
-        <div class="video-container">
-          <iframe src="https://www.youtube.com/embed/TGwdLwf96u0" title="O Que É Visão Computacional e Por Que Ela É Importante?" frameborder="0" allowfullscreen></iframe>
-        </div>
+        <p>Tecnologia que permite que máquinas "enxerguem" e interpretem
+          imagens ou vídeos, usada em carros autônomos e segurança.</p>
       </div>
     </div>
   </section>
 
   <!-- Seção 3 -->
-  <section id="setec" class="secao secao-3">
-    <h2>Tema para a SETEC</h2>
-    <p>
-      Um dos temas mais relevantes para apresentar na Semana da Tecnologia é a 
-      <strong>Inteligência Artificial Generativa</strong>, responsável por criar textos, imagens, músicas e até códigos de programação. 
-      Essa tecnologia vem revolucionando áreas como educação, entretenimento e negócios.
-    </p>
-    <img src="https://img.icons8.com/external-flaticons-flat-flat-icons/512/external-ai-artificial-intelligence-flaticons-flat-flat-icons.png" alt="Imagem Inteligência Artificial Generativa">
+  <section id="setec" class="container">
+    <h2>IA na SETEC</h2>
+    <p class="lead">Um tema interessante para a Semana da Tecnologia é a
+      <strong>IA Generativa</strong>, que permite a criação de textos, imagens e
+      até músicas a partir de algoritmos avançados.</p>
+
+    <div class="grid two">
+      <div class="card">
+        <h3>O que é IA Generativa?</h3>
+        <p>É um ramo da inteligência artificial que consegue criar conteúdos
+          originais. Um exemplo são geradores de imagens ou assistentes de
+          texto inteligentes.</p>
+      </div>
+      <div class="card">
+        <h3>Aplicações</h3>
+        <ul class="check">
+          <li>Design de imagens e artes digitais</li>
+          <li>Criação de chatbots inteligentes</li>
+          <li>Produção de música e sons</li>
+          <li>Auxílio em pesquisas escolares</li>
+        </ul>
+      </div>
+    </div>
   </section>
+
+  <!-- Rodapé -->
+  <footer>
+    <div class="container small">© 2025 DS 2°A EM - Colégio Barbosa Ferraz</div>
+  </footer>
 </body>
 </html>
