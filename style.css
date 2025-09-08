@@ -102,10 +102,12 @@ footer {
 
 .secbg1 {
   background-color: #0a0f1c;
+  border-bottom: 3px solid #000;
 }
 
 .secbg2 {
   background-color: #ed5887;
+  border-bottom: 3px solid #000;
 }
 
 .secbg3 {
