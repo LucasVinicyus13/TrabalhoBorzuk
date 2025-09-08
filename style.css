@@ -54,12 +54,16 @@ header {
 
 /* Sessões ocupando tela inteira */
 section {
-  height: 100vh;
+  min-height: 100vh;   /* cada sessão ocupa pelo menos a tela inteira */
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-top: 80px;
+  align-items: center;
+  position: relative;
+  padding: 60px 20px;  /* evita que o conteúdo grude nas bordas */
+  box-sizing: border-box;
 }
+
 
 /* Grid */
 .grid {
