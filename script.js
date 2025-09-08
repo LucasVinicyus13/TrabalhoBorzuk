@@ -1,10 +1,10 @@
 const sections = document.querySelectorAll("section");
 const body = document.body;
 
-const colors = {
-  curso: "#0a0f1c",   // sessão 1
-  ia: "#ed5887",      // sessão 2
-  setec: "#fdec6f"    // sessão 3
+const styles = {
+  curso: { bg: "#0a0f1c", color: "#fff" },   // sessão 1
+  ia: { bg: "#ed5887", color: "#fff" },      // sessão 2
+  setec: { bg: "#fdec6f", color: "#000" }    // sessão 3 (texto escuro p/ contraste)
 };
 
 window.addEventListener("scroll", () => {
@@ -15,7 +15,8 @@ window.addEventListener("scroll", () => {
       current = sec.getAttribute("id");
     }
   });
-  if (colors[current]) {
-    body.style.backgroundColor = colors[current];
+  if (styles[current]) {
+    body.style.backgroundColor = styles[current].bg;
+    body.style.color = styles[current].color;
   }
 });
