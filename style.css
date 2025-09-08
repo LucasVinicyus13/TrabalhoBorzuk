@@ -78,10 +78,13 @@ p.lead { color: var(--text-black); margin: 0 0 22px; }
   .hero .grid, .grid.two, .grid.four { grid-template-columns: 1fr; }
 }
 .tag {
-  display: inline-block; padding: 6px 10px;
-  border-radius: 999px; background: #111a33;
-  border: 1px solid var(--ring);
-  color: var(--muted); font-size: .8rem;
+    display: inline-block;
+    padding: 6px 10px;
+    border-radius: 999px;
+    background: #eb47c6;
+    border: 1px solid #000000;
+    color: #000;
+    font-size: .8rem;
 }
 ul.check { padding-left: 18px; }
 ul.check li { margin: 8px 0; }
