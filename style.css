@@ -100,15 +100,15 @@ footer {
 .small { font-size: .9rem; color: var(--muted); }
 
 
-#section1 {
+.secbg1 {
   background-color: #0a0f1c;
 }
 
-#section2 {
+.secbg2 {
   background-color: #ed5887;
 }
 
-#section3 {
+.secbg3 {
   background-color: #fdec6f;
   color: var(--text-black);
 }
