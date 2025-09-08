@@ -134,3 +134,33 @@ footer {
     background: #ffb300;
     font-weight: 600;
 }
+
+
+.video-scroll {
+  display: flex;
+  gap: 18px;
+  overflow-x: auto;
+  padding-bottom: 12px;
+  scrollbar-width: thin;
+  scrollbar-color: #7a0a5f #ed5887; /* cor da barra e fundo */
+}
+
+.video-scroll::-webkit-scrollbar {
+  height: 10px;
+}
+
+.video-scroll::-webkit-scrollbar-track {
+  background: #ed5887; /* cor do fundo */
+  border-radius: 10px;
+}
+
+.video-scroll::-webkit-scrollbar-thumb {
+  background-color: #7a0a5f; /* cor da barrinha */
+  border-radius: 10px;
+  border: 2px solid #ed5887;
+}
+
+.video-scroll .card {
+  min-width: 280px; /* largura mínima dos cards */
+  flex: 0 0 auto;   /* impede de encolher */
+}
