@@ -65,7 +65,7 @@ h1 {
 }
 section { padding: 56px 0; scroll-margin-top: 84px; }
 h2 { font-size: clamp(1.4rem, 2.5vw, 2.2rem); margin: 0 0 10px; }
-p.lead { color: var(--muted); margin: 0 0 22px; }
+p.lead { color: var(--text-black); margin: 0 0 22px; }
 .card {
   background: linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.01));
   border: 1px solid var(--ring); border-radius: 18px;
