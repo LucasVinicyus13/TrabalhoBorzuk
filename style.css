@@ -167,3 +167,48 @@ footer {
   background: var(--accent);
 }
 
+.videos-carousel {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.videos-scroll {
+  display: flex;
+  gap: 18px;
+  overflow-x: hidden; /* tiramos a barra */
+  padding: 20px 0;
+  scroll-behavior: smooth; /* transição suave */
+  flex: 1;
+}
+
+.videos-scroll .card {
+  flex: 0 0 260px;
+  scroll-snap-align: start;
+}
+
+.arrow {
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  border: none;
+  font-size: 2rem;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background 0.3s;
+  z-index: 10;
+}
+
+.arrow:hover {
+  background: rgba(0,0,0,0.8);
+}
+
+.arrow.left {
+  position: absolute;
+  left: -50px;
+}
+
+.arrow.right {
+  position: absolute;
+  right: -50px;
+}
