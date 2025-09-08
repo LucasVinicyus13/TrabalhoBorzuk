@@ -2,9 +2,9 @@ const sections = document.querySelectorAll("section");
 const body = document.body;
 
 const colors = {
-  curso: "#0a0f1c",   // cor inicial
-  ia: "#ed5887",
-  setec: "#fdec6f"
+  curso: "#0a0f1c",   // sessão 1
+  ia: "#ed5887",      // sessão 2
+  setec: "#fdec6f"    // sessão 3
 };
 
 window.addEventListener("scroll", () => {
