@@ -115,7 +115,19 @@ footer {
   color: var(--text-black);
 }
 
+.btn2 {
+    padding: 12px 16px;
+    border-radius: 14px;
+    border: 1px solid #9d007a;
+    color: #fff;
+    background: #9d007a;
+    font-weight: 600;
+}
+
 .btn3 {
-  padding: 12px 16px; border-radius: 14px; border: 1px solid #ffb300;
-  background: #ffb300; color: var(--text); font-weight: 600;
+    padding: 12px 16px;
+    border-radius: 14px;
+    border: 1px solid #ffb300;
+    background: #ffb300;
+    font-weight: 600;
 }
