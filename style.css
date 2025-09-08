@@ -136,31 +136,34 @@ footer {
 }
 
 
-.video-scroll {
+.videos-scroll {
   display: flex;
   gap: 18px;
   overflow-x: auto;
   padding-bottom: 12px;
-  scrollbar-width: thin;
-  scrollbar-color: #7a0a5f #ed5887; /* cor da barra e fundo */
+  scroll-snap-type: x mandatory;
 }
 
-.video-scroll::-webkit-scrollbar {
+.videos-scroll .card {
+  flex: 0 0 260px; /* mantém o mesmo tamanho dos cards */
+  scroll-snap-align: start;
+}
+
+.videos-scroll::-webkit-scrollbar {
   height: 10px;
 }
 
-.video-scroll::-webkit-scrollbar-track {
-  background: #ed5887; /* cor do fundo */
+.videos-scroll::-webkit-scrollbar-track {
+  background: var(--bg-soft);
   border-radius: 10px;
 }
 
-.video-scroll::-webkit-scrollbar-thumb {
-  background-color: #7a0a5f; /* cor da barrinha */
+.videos-scroll::-webkit-scrollbar-thumb {
+  background: var(--primary);
   border-radius: 10px;
-  border: 2px solid #ed5887;
 }
 
-.video-scroll .card {
-  min-width: 280px; /* largura mínima dos cards */
-  flex: 0 0 auto;   /* impede de encolher */
+.videos-scroll::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
 }
+
